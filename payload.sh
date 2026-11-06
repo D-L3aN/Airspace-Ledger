@@ -3,11 +3,10 @@
 # ==========================================================
 # Airspace Ledger
 # ==========================================================
-#
 # Name: Airspace Ledger
 # Author:D-L3aN
 # Version: 3.0
-# Author: Community Contribution
+# Author:D-L3aN
 # Platform: Hak5 WiFi Pineapple Pager
 # Category: Reconnaissance
 #
