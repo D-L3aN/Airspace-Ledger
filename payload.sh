@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ==========================================================
-# AIRSPACE LEDGER SENTINEL
+# Airspace Ledger
 # ==========================================================
 #
-# Name: Airspace Ledger Sentinel
+# Name: Airspace Ledger
 # Version: 3.0
 # Author: Community Contribution
 # Platform: Hak5 WiFi Pineapple Pager
@@ -39,7 +39,7 @@
 # ==========================================================
 
 VERSION="3.0"
-PAYLOAD_NAME="Airspace Ledger Sentinel"
+PAYLOAD_NAME="Airspace Ledger"
 
 BASE="/root/loot/airspace_ledger_sentinel"
 
@@ -490,7 +490,7 @@ with open(source, newline="", encoding="utf-8") as file:
 with open(destination, "w", encoding="utf-8") as file:
     json.dump(
         {
-            "application": "Airspace Ledger Sentinel",
+            "application": "Airspace Ledger",
             "version": "3.0",
             "devices": devices
         },
@@ -513,7 +513,7 @@ generate_report() {
     REPORT="$REPORTS/snapshot_$STAMP.txt"
 
     {
-        echo "AIRSPACE LEDGER SENTINEL"
+        echo "Airspace Ledger"
         echo "Version: $VERSION"
         echo "Generated: $NOW"
 
@@ -583,7 +583,7 @@ generate_report() {
 
 snapshot_mode() {
 
-    notify blue "Starting Airspace Ledger Sentinel"
+    notify blue "Starting Airspace Ledger"
 
     : > "$OBSERVATIONS"
 
@@ -690,7 +690,7 @@ case "${1:-snapshot}" in
         ;;
 
     *)
-        echo "Airspace Ledger Sentinel $VERSION"
+        echo "Airspace Ledger $VERSION"
         echo ""
         echo "Usage:"
         echo "  payload.sh snapshot"
